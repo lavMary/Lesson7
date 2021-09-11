@@ -1,4 +1,4 @@
-public class HealerDruid extends Healer{
+public class HealerDruid extends Healer implements Trainee {
     private Beast beast;
     public HealerDruid (int hp, int level, int damage) {
         super(hp, level, damage);
@@ -19,5 +19,10 @@ public class HealerDruid extends Healer{
     @Override
     void heroInfo() {
         System.out.println("Hi! My name is Ella.");
+    }
+
+    @Override
+    public void train() {
+        System.out.println("Healer cant training here");
     }
 }

@@ -18,13 +18,13 @@ public class Main {
 
         Academy academy = new Academy();
         academy.teach((Trainee) warrior);
-        System.out.println("Warrior is teaching in academy");
+        //System.out.println("Warrior is teaching in academy");
         WarriorAcademy warriorAcademy = new WarriorAcademy();
         warriorAcademy.teach((Trainee) cossack);
-        System.out.println("Cossack is teaching in Warrior academy");
+        //System.out.println("Cossack is teaching in Warrior academy");
         PriestAcademy priestAcademy = new PriestAcademy();
-        priestAcademy.teach((Trainee) healer);
-        System.out.println("Healer is teaching in Priest academy");
+        priestAcademy.teach((Trainee) healerDruid);
+        //System.out.println("Healer is teaching in Priest academy");
     }
 
 }

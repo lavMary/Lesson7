@@ -1,4 +1,4 @@
-public class Warrior extends Hero {
+public class Warrior extends Hero implements Trainee {
     private int phisDamageMultipl;
 
     public Warrior (int hp, int level, int damage) {
@@ -16,5 +16,10 @@ public class Warrior extends Hero {
     void powerfulHit() {
         hp -= 300;
         System.out.println("Now my hp is " + hp + ". It was powerful!");
+    }
+
+    @Override
+    public void train() {
+        System.out.println("Warrior cant training here");
     }
 }

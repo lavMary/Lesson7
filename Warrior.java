@@ -1,4 +1,4 @@
-public class Warrior extends Hero implements Trainee {
+public class Warrior extends Hero {
     private int phisDamageMultipl;
 
     public Warrior (int hp, int level, int damage) {
